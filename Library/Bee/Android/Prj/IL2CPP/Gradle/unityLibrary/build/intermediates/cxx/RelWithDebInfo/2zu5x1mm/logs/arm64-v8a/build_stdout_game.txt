@@ -1,0 +1,10 @@
+ninja: Entering directory `D:\UnityProjects\haptic-3D-v1\.utmp\RelWithDebInfo\2zu5x1mm\arm64-v8a'
+[1/9] Building CXX object GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o
+[2/9] Building CXX object GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o
+[3/9] Building CXX object GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o
+[4/9] Building CXX object GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o
+[5/9] Building CXX object GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o
+[6/9] Building CXX object GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o
+[7/9] Building CXX object GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o
+[8/9] Building CXX object GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o
+[9/9] Linking CXX shared library D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\cxx\RelWithDebInfo\2zu5x1mm\obj\arm64-v8a\libgame.so

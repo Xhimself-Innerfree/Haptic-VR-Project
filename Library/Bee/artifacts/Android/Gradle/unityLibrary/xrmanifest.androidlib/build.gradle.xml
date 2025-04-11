@@ -1,0 +1,30 @@
+<root name="" element-id="272" assign-type="None" type="Unity.Android.Gradle.ModuleBuildGradleFile" base-type="Unity.Android.Gradle.BaseBlock" is-default="false" dependencies="">
+  <element name="" element-id="273" assign-type="None" type="Unity.Android.Gradle.ApplyPluginList" base-type="Unity.Android.Gradle.BaseBlock" is-default="true" dependencies="">
+    <element name="" element-id="357" assign-type="None" raw-value="apply plugin: 'com.android.library'" type="Unity.Android.Gradle.Element" base-type="Unity.Android.Gradle.Element" is-default="false" dependencies="" />
+  </element>
+  <element name="dependencies" element-id="274" assign-type="None" type="Unity.Android.Gradle.Dependencies" base-type="Unity.Android.Gradle.BaseBlock" is-default="true" dependencies="273">
+    <element name="" element-id="358" assign-type="None" raw-value="implementation fileTree(dir: 'bin', include: ['*.jar'])" type="Unity.Android.Gradle.Element" base-type="Unity.Android.Gradle.Element" is-default="false" dependencies="" />
+    <element name="" element-id="359" assign-type="None" raw-value="implementation fileTree(dir: 'libs', include: ['*.jar'])" type="Unity.Android.Gradle.Element" base-type="Unity.Android.Gradle.Element" is-default="false" dependencies="" />
+  </element>
+  <element name="android" element-id="276" assign-type="None" type="Unity.Android.Gradle.Android" base-type="Unity.Android.Gradle.BaseBlock" is-default="true" dependencies="273">
+    <element name="namespace" element-id="277" assign-type="None" property-value="com.UnityTechnologies.XR.Manifest" type="Unity.Android.Gradle.PropertyString" base-type="BaseProperty" is-default="true" dependencies="" />
+    <element name="compileSdk" element-id="281" assign-type="None" property-value="35" type="Unity.Android.Gradle.PropertyUnsignedInteger" base-type="BaseProperty" is-default="true" dependencies="" />
+    <element name="buildToolsVersion" element-id="282" assign-type="Equals" property-value="34.0.0" type="Unity.Android.Gradle.PropertyString" base-type="BaseProperty" is-default="true" dependencies="" />
+    <element name="defaultConfig" element-id="287" assign-type="None" type="Unity.Android.Gradle.Flavor" base-type="Unity.Android.Gradle.BaseBlock" is-default="true" dependencies="">
+      <element name="minSdk" element-id="295" assign-type="None" property-value="23" type="Unity.Android.Gradle.PropertyUnsignedInteger" base-type="BaseProperty" is-default="true" dependencies="" />
+      <element name="targetSdk" element-id="296" assign-type="None" property-value="35" type="Unity.Android.Gradle.PropertyUnsignedInteger" base-type="BaseProperty" is-default="true" dependencies="" />
+    </element>
+    <element name="lint" element-id="303" assign-type="None" type="Unity.Android.Gradle.Lint" base-type="Unity.Android.Gradle.BaseBlock" is-default="true" dependencies="">
+      <element name="abortOnError" element-id="305" assign-type="None" property-value="False" type="Unity.Android.Gradle.PropertyBoolean" base-type="BaseProperty" is-default="true" dependencies="" />
+    </element>
+    <element name="sourceSets" element-id="344" assign-type="None" type="Unity.Android.Gradle.Block" base-type="Unity.Android.Gradle.BaseBlock" is-default="true" dependencies="">
+      <element name="main" element-id="360" assign-type="None" type="Unity.Android.Gradle.Block" base-type="Unity.Android.Gradle.BaseBlock" is-default="false" dependencies="">
+        <element name="" element-id="361" assign-type="None" raw-value="manifest.srcFile 'AndroidManifest.xml'" type="Unity.Android.Gradle.Element" base-type="Unity.Android.Gradle.Element" is-default="false" dependencies="" />
+        <element name="" element-id="362" assign-type="None" raw-value="//java.srcDirs = ['src']" type="Unity.Android.Gradle.Element" base-type="Unity.Android.Gradle.Element" is-default="false" dependencies="" />
+        <element name="" element-id="363" assign-type="None" raw-value="res.srcDirs = ['res']" type="Unity.Android.Gradle.Element" base-type="Unity.Android.Gradle.Element" is-default="false" dependencies="" />
+        <element name="" element-id="364" assign-type="None" raw-value="assets.srcDirs = ['assets']" type="Unity.Android.Gradle.Element" base-type="Unity.Android.Gradle.Element" is-default="false" dependencies="" />
+        <element name="" element-id="365" assign-type="None" raw-value="jniLibs.srcDirs = ['libs']" type="Unity.Android.Gradle.Element" base-type="Unity.Android.Gradle.Element" is-default="false" dependencies="" />
+      </element>
+    </element>
+  </element>
+</root>

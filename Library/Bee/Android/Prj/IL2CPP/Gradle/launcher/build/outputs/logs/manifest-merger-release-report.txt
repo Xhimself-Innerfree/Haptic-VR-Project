@@ -1,0 +1,352 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
+INJECTED from D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
+INJECTED from D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
+INJECTED from D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
+MERGED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:2:1-86:12
+MERGED from [:unityLibrary:xrmanifest.androidlib] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\xhims\.gradle\caches\8.11\transforms\900fc11a629a08d1211324abd3c19ea4\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\xhims\.gradle\caches\8.11\transforms\a45e6069921f8df60cd9c09d016f0346\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\xhims\.gradle\caches\8.11\transforms\a776d172d9d24a1128478cf2dc19e9b4\transformed\appcompat-1.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\xhims\.gradle\caches\8.11\transforms\39e8794ded1d34b73598c76855cea008\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.6.0] C:\Users\xhims\.gradle\caches\8.11\transforms\a812108252d32427ac1d445f11e87303\transformed\jetified-activity-1.6.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\xhims\.gradle\caches\8.11\transforms\63ce9990a1d1b5bd56a811a6f3b2becb\transformed\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\xhims\.gradle\caches\8.11\transforms\5478c4ae8a2ff144115804c76ab6ff43\transformed\jetified-emoji2-views-helper-1.2.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\xhims\.gradle\caches\8.11\transforms\506e0923b2edf699a568247bbabd40eb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\xhims\.gradle\caches\8.11\transforms\a44acc8c6c7c45e79382a60783ef3653\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\xhims\.gradle\caches\8.11\transforms\93ba12bde3e2d034d0c78acb4d594ce3\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\xhims\.gradle\caches\8.11\transforms\faa44d9b612352274d550ffccf4b4319\transformed\jetified-lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\xhims\.gradle\caches\8.11\transforms\e8d9ad7355c449ae2226c5b1e8f2159d\transformed\jetified-core-ktx-1.9.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\xhims\.gradle\caches\8.11\transforms\0492c107e57b1b77599eb60968b6b762\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\xhims\.gradle\caches\8.11\transforms\1d3f85bfd41ba9b71cbf977b822211e1\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\xhims\.gradle\caches\8.11\transforms\948c8c3c0d251d8de6e249d211454642\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\xhims\.gradle\caches\8.11\transforms\96c3cfcd5c56984b1e3d54d2a4a0433b\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.9.0] C:\Users\xhims\.gradle\caches\8.11\transforms\01b0759c45be5acd57b988c62a807a3d\transformed\core-1.9.0\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.games:games-activity:3.0.5] C:\Users\xhims\.gradle\caches\8.11\transforms\cf11df13d2fd9a509170edfac64a04e6\transformed\jetified-games-activity-3.0.5\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\xhims\.gradle\caches\8.11\transforms\b2cbfc800a2a050c07f3598eb3173ca5\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\xhims\.gradle\caches\8.11\transforms\2be88b33c7c135c3fb5a1d54448b4c97\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\xhims\.gradle\caches\8.11\transforms\ec9d4e0e0547c443963d0ad19909bb7e\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\xhims\.gradle\caches\8.11\transforms\b19860321e1da8d42da0a5fd3d8ced21\transformed\jetified-savedstate-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\xhims\.gradle\caches\8.11\transforms\2167a29dad8ae611359d66faae2b3fc7\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\xhims\.gradle\caches\8.11\transforms\6ca0a37ca869cedd00e149380d0ea920\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\xhims\.gradle\caches\8.11\transforms\302474c1f8f9dc37490b003098b8ada7\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\xhims\.gradle\caches\8.11\transforms\4b0ac062ef5d4a380b7ae116ef659ccd\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\xhims\.gradle\caches\8.11\transforms\66166c5003f18dbe2bca39ea8eaa2e53\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\xhims\.gradle\caches\8.11\transforms\5ab92f72338bda80143fb4ff3a20b7db\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\xhims\.gradle\caches\8.11\transforms\cc93c6b4bc2e54adfa0358b4d88bb2d4\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\xhims\.gradle\caches\8.11\transforms\19e16d8446b35c40dd56ffb1c0baa9c1\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:17:1-22:12
+	package
+		INJECTED from D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:111-157
+	android:versionCode
+		INJECTED from D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:52-110
+	android:installLocation
+		ADDED from D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:2:11-51
+application
+ADDED from D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:3-83
+INJECTED from D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:3-83
+MERGED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:24:5-84:19
+MERGED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:24:5-84:19
+MERGED from [:unityLibrary:xrmanifest.androidlib] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:7:5-9:19
+MERGED from [:unityLibrary:xrmanifest.androidlib] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:7:5-9:19
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\xhims\.gradle\caches\8.11\transforms\900fc11a629a08d1211324abd3c19ea4\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\xhims\.gradle\caches\8.11\transforms\900fc11a629a08d1211324abd3c19ea4\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\xhims\.gradle\caches\8.11\transforms\506e0923b2edf699a568247bbabd40eb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\xhims\.gradle\caches\8.11\transforms\506e0923b2edf699a568247bbabd40eb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.9.0] C:\Users\xhims\.gradle\caches\8.11\transforms\01b0759c45be5acd57b988c62a807a3d\transformed\core-1.9.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.9.0] C:\Users\xhims\.gradle\caches\8.11\transforms\01b0759c45be5acd57b988c62a807a3d\transformed\core-1.9.0\AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\xhims\.gradle\caches\8.11\transforms\2be88b33c7c135c3fb5a1d54448b4c97\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\xhims\.gradle\caches\8.11\transforms\2be88b33c7c135c3fb5a1d54448b4c97\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\xhims\.gradle\caches\8.11\transforms\2167a29dad8ae611359d66faae2b3fc7\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\xhims\.gradle\caches\8.11\transforms\2167a29dad8ae611359d66faae2b3fc7\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\xhims\.gradle\caches\8.11\transforms\6ca0a37ca869cedd00e149380d0ea920\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\xhims\.gradle\caches\8.11\transforms\6ca0a37ca869cedd00e149380d0ea920\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+	android:extractNativeLibs
+		INJECTED from D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+		REJECTED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:26:9-41
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.9.0] C:\Users\xhims\.gradle\caches\8.11\transforms\01b0759c45be5acd57b988c62a807a3d\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+	android:label
+		ADDED from D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:48-80
+	android:icon
+		ADDED from D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:16-47
+	android:enableOnBackInvokedCallback
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:25:9-52
+supports-screens
+ADDED from D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:3-163
+	android:largeScreens
+		ADDED from D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:78-105
+	android:smallScreens
+		ADDED from D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:21-48
+	android:normalScreens
+		ADDED from D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:49-77
+	android:xlargeScreens
+		ADDED from D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:106-134
+	android:anyDensity
+		ADDED from D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:135-160
+uses-sdk
+INJECTED from D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+INJECTED from D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+MERGED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:6:5-44
+MERGED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:6:5-44
+MERGED from [:unityLibrary:xrmanifest.androidlib] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:5:5-44
+MERGED from [:unityLibrary:xrmanifest.androidlib] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:5:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\xhims\.gradle\caches\8.11\transforms\900fc11a629a08d1211324abd3c19ea4\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\xhims\.gradle\caches\8.11\transforms\900fc11a629a08d1211324abd3c19ea4\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\xhims\.gradle\caches\8.11\transforms\a45e6069921f8df60cd9c09d016f0346\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] C:\Users\xhims\.gradle\caches\8.11\transforms\a45e6069921f8df60cd9c09d016f0346\transformed\jetified-appcompat-resources-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\xhims\.gradle\caches\8.11\transforms\a776d172d9d24a1128478cf2dc19e9b4\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] C:\Users\xhims\.gradle\caches\8.11\transforms\a776d172d9d24a1128478cf2dc19e9b4\transformed\appcompat-1.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\xhims\.gradle\caches\8.11\transforms\39e8794ded1d34b73598c76855cea008\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\xhims\.gradle\caches\8.11\transforms\39e8794ded1d34b73598c76855cea008\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.6.0] C:\Users\xhims\.gradle\caches\8.11\transforms\a812108252d32427ac1d445f11e87303\transformed\jetified-activity-1.6.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.6.0] C:\Users\xhims\.gradle\caches\8.11\transforms\a812108252d32427ac1d445f11e87303\transformed\jetified-activity-1.6.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\xhims\.gradle\caches\8.11\transforms\63ce9990a1d1b5bd56a811a6f3b2becb\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\xhims\.gradle\caches\8.11\transforms\63ce9990a1d1b5bd56a811a6f3b2becb\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\xhims\.gradle\caches\8.11\transforms\5478c4ae8a2ff144115804c76ab6ff43\transformed\jetified-emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\xhims\.gradle\caches\8.11\transforms\5478c4ae8a2ff144115804c76ab6ff43\transformed\jetified-emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\xhims\.gradle\caches\8.11\transforms\506e0923b2edf699a568247bbabd40eb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\xhims\.gradle\caches\8.11\transforms\506e0923b2edf699a568247bbabd40eb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\xhims\.gradle\caches\8.11\transforms\a44acc8c6c7c45e79382a60783ef3653\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\xhims\.gradle\caches\8.11\transforms\a44acc8c6c7c45e79382a60783ef3653\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\xhims\.gradle\caches\8.11\transforms\93ba12bde3e2d034d0c78acb4d594ce3\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] C:\Users\xhims\.gradle\caches\8.11\transforms\93ba12bde3e2d034d0c78acb4d594ce3\transformed\lifecycle-viewmodel-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\xhims\.gradle\caches\8.11\transforms\faa44d9b612352274d550ffccf4b4319\transformed\jetified-lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] C:\Users\xhims\.gradle\caches\8.11\transforms\faa44d9b612352274d550ffccf4b4319\transformed\jetified-lifecycle-viewmodel-savedstate-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\xhims\.gradle\caches\8.11\transforms\e8d9ad7355c449ae2226c5b1e8f2159d\transformed\jetified-core-ktx-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.9.0] C:\Users\xhims\.gradle\caches\8.11\transforms\e8d9ad7355c449ae2226c5b1e8f2159d\transformed\jetified-core-ktx-1.9.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\xhims\.gradle\caches\8.11\transforms\0492c107e57b1b77599eb60968b6b762\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\xhims\.gradle\caches\8.11\transforms\0492c107e57b1b77599eb60968b6b762\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\xhims\.gradle\caches\8.11\transforms\1d3f85bfd41ba9b71cbf977b822211e1\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\xhims\.gradle\caches\8.11\transforms\1d3f85bfd41ba9b71cbf977b822211e1\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\xhims\.gradle\caches\8.11\transforms\948c8c3c0d251d8de6e249d211454642\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\xhims\.gradle\caches\8.11\transforms\948c8c3c0d251d8de6e249d211454642\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\xhims\.gradle\caches\8.11\transforms\96c3cfcd5c56984b1e3d54d2a4a0433b\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\xhims\.gradle\caches\8.11\transforms\96c3cfcd5c56984b1e3d54d2a4a0433b\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.9.0] C:\Users\xhims\.gradle\caches\8.11\transforms\01b0759c45be5acd57b988c62a807a3d\transformed\core-1.9.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.9.0] C:\Users\xhims\.gradle\caches\8.11\transforms\01b0759c45be5acd57b988c62a807a3d\transformed\core-1.9.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.games:games-activity:3.0.5] C:\Users\xhims\.gradle\caches\8.11\transforms\cf11df13d2fd9a509170edfac64a04e6\transformed\jetified-games-activity-3.0.5\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.games:games-activity:3.0.5] C:\Users\xhims\.gradle\caches\8.11\transforms\cf11df13d2fd9a509170edfac64a04e6\transformed\jetified-games-activity-3.0.5\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\xhims\.gradle\caches\8.11\transforms\b2cbfc800a2a050c07f3598eb3173ca5\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\xhims\.gradle\caches\8.11\transforms\b2cbfc800a2a050c07f3598eb3173ca5\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\xhims\.gradle\caches\8.11\transforms\2be88b33c7c135c3fb5a1d54448b4c97\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\xhims\.gradle\caches\8.11\transforms\2be88b33c7c135c3fb5a1d54448b4c97\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\xhims\.gradle\caches\8.11\transforms\ec9d4e0e0547c443963d0ad19909bb7e\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] C:\Users\xhims\.gradle\caches\8.11\transforms\ec9d4e0e0547c443963d0ad19909bb7e\transformed\lifecycle-runtime-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\xhims\.gradle\caches\8.11\transforms\b19860321e1da8d42da0a5fd3d8ced21\transformed\jetified-savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] C:\Users\xhims\.gradle\caches\8.11\transforms\b19860321e1da8d42da0a5fd3d8ced21\transformed\jetified-savedstate-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\xhims\.gradle\caches\8.11\transforms\2167a29dad8ae611359d66faae2b3fc7\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\xhims\.gradle\caches\8.11\transforms\2167a29dad8ae611359d66faae2b3fc7\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\xhims\.gradle\caches\8.11\transforms\6ca0a37ca869cedd00e149380d0ea920\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\xhims\.gradle\caches\8.11\transforms\6ca0a37ca869cedd00e149380d0ea920\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\xhims\.gradle\caches\8.11\transforms\302474c1f8f9dc37490b003098b8ada7\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\xhims\.gradle\caches\8.11\transforms\302474c1f8f9dc37490b003098b8ada7\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\xhims\.gradle\caches\8.11\transforms\4b0ac062ef5d4a380b7ae116ef659ccd\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\xhims\.gradle\caches\8.11\transforms\4b0ac062ef5d4a380b7ae116ef659ccd\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\xhims\.gradle\caches\8.11\transforms\66166c5003f18dbe2bca39ea8eaa2e53\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\xhims\.gradle\caches\8.11\transforms\66166c5003f18dbe2bca39ea8eaa2e53\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\xhims\.gradle\caches\8.11\transforms\5ab92f72338bda80143fb4ff3a20b7db\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\xhims\.gradle\caches\8.11\transforms\5ab92f72338bda80143fb4ff3a20b7db\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\xhims\.gradle\caches\8.11\transforms\cc93c6b4bc2e54adfa0358b4d88bb2d4\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\xhims\.gradle\caches\8.11\transforms\cc93c6b4bc2e54adfa0358b4d88bb2d4\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\xhims\.gradle\caches\8.11\transforms\19e16d8446b35c40dd56ffb1c0baa9c1\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.3.0] C:\Users\xhims\.gradle\caches\8.11\transforms\19e16d8446b35c40dd56ffb1c0baa9c1\transformed\jetified-annotation-experimental-1.3.0\AndroidManifest.xml:20:5-44
+	android:targetSdkVersion
+		INJECTED from D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:8:5-67
+	android:name
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:8:22-64
+uses-feature#0x00030000
+ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:10:5-54
+	android:glEsVersion
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:10:19-51
+uses-feature#android.hardware.vulkan.version
+ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:11:5-13:36
+	android:required
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:13:9-33
+	android:name
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:12:9-55
+uses-feature#android.hardware.touchscreen
+ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:14:5-16:36
+	android:required
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:16:9-33
+	android:name
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:15:9-52
+uses-feature#android.hardware.touchscreen.multitouch
+ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:17:5-19:36
+	android:required
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:19:9-33
+	android:name
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:18:9-63
+uses-feature#android.hardware.touchscreen.multitouch.distinct
+ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:20:5-22:36
+	android:required
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:22:9-33
+	android:name
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:21:9-72
+meta-data#unity.splash-mode
+ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:27:9-29:33
+	android:value
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:29:13-30
+	android:name
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:28:13-45
+meta-data#unity.splash-enable
+ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:30:9-32:36
+	android:value
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:32:13-33
+	android:name
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:31:13-47
+meta-data#unity.launch-fullscreen
+ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:33:9-35:36
+	android:value
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:35:13-33
+	android:name
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:34:13-51
+meta-data#unity.render-outside-safearea
+ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:36:9-38:36
+	android:value
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:38:13-33
+	android:name
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:37:13-57
+meta-data#notch.config
+ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:39:9-41:50
+	android:value
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:41:13-47
+	android:name
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:40:13-40
+meta-data#unity.auto-report-fully-drawn
+ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:42:9-44:36
+	android:value
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:44:13-33
+	android:name
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:43:13-57
+meta-data#unity.auto-set-game-state
+ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:45:9-47:36
+	android:value
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:47:13-33
+	android:name
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:46:13-53
+meta-data#unity.strip-engine-code
+ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:48:9-50:36
+	android:value
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:50:13-33
+	android:name
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:49:13-51
+activity#com.unity3d.player.UnityPlayerGameActivity
+ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:52:9-83:20
+MERGED from [:unityLibrary:xrmanifest.androidlib] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:8:9-79
+MERGED from [:unityLibrary:xrmanifest.androidlib] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:8:9-79
+	android:screenOrientation
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:60:13-49
+	android:enabled
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:55:13-35
+	android:launchMode
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:58:13-44
+	android:hardwareAccelerated
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:57:13-48
+	android:exported
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:56:13-36
+	android:resizeableActivity
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:59:13-46
+	android:configChanges
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:54:13-194
+	android:theme
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:61:13-62
+	android:name
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:53:13-70
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:62:13-66:29
+category#android.intent.category.LAUNCHER
+ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:63:17-77
+	android:name
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:63:27-74
+action#android.intent.action.MAIN
+ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:65:17-69
+	android:name
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:65:25-66
+meta-data#unityplayer.UnityActivity
+ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:68:13-70:40
+	android:value
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:70:17-37
+	android:name
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:69:17-57
+meta-data#android.app.lib_name
+ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:71:13-73:40
+	android:value
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:73:17-37
+	android:name
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:72:17-52
+meta-data#WindowManagerPreference:FreeformWindowSize
+ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:74:13-76:71
+	android:value
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:76:17-68
+	android:name
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:75:17-74
+meta-data#WindowManagerPreference:FreeformWindowOrientation
+ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:77:13-79:79
+	android:value
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:79:17-76
+	android:name
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:78:17-81
+meta-data#notch_support
+ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:80:13-82:40
+	android:value
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:82:17-37
+	android:name
+		ADDED from [:unityLibrary] D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:81:17-45
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\xhims\.gradle\caches\8.11\transforms\506e0923b2edf699a568247bbabd40eb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\xhims\.gradle\caches\8.11\transforms\2be88b33c7c135c3fb5a1d54448b4c97\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\xhims\.gradle\caches\8.11\transforms\2be88b33c7c135c3fb5a1d54448b4c97\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\xhims\.gradle\caches\8.11\transforms\6ca0a37ca869cedd00e149380d0ea920\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\xhims\.gradle\caches\8.11\transforms\6ca0a37ca869cedd00e149380d0ea920\transformed\jetified-startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\xhims\.gradle\caches\8.11\transforms\506e0923b2edf699a568247bbabd40eb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\xhims\.gradle\caches\8.11\transforms\506e0923b2edf699a568247bbabd40eb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\xhims\.gradle\caches\8.11\transforms\506e0923b2edf699a568247bbabd40eb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\xhims\.gradle\caches\8.11\transforms\506e0923b2edf699a568247bbabd40eb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\xhims\.gradle\caches\8.11\transforms\506e0923b2edf699a568247bbabd40eb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\xhims\.gradle\caches\8.11\transforms\506e0923b2edf699a568247bbabd40eb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.2.0] C:\Users\xhims\.gradle\caches\8.11\transforms\506e0923b2edf699a568247bbabd40eb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] C:\Users\xhims\.gradle\caches\8.11\transforms\01b0759c45be5acd57b988c62a807a3d\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.9.0] C:\Users\xhims\.gradle\caches\8.11\transforms\01b0759c45be5acd57b988c62a807a3d\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.9.0] C:\Users\xhims\.gradle\caches\8.11\transforms\01b0759c45be5acd57b988c62a807a3d\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+permission#com.UnityTechnologies.com.unity.template.urpblank.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] C:\Users\xhims\.gradle\caches\8.11\transforms\01b0759c45be5acd57b988c62a807a3d\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.9.0] C:\Users\xhims\.gradle\caches\8.11\transforms\01b0759c45be5acd57b988c62a807a3d\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.9.0] C:\Users\xhims\.gradle\caches\8.11\transforms\01b0759c45be5acd57b988c62a807a3d\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] C:\Users\xhims\.gradle\caches\8.11\transforms\01b0759c45be5acd57b988c62a807a3d\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.9.0] C:\Users\xhims\.gradle\caches\8.11\transforms\01b0759c45be5acd57b988c62a807a3d\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+uses-permission#com.UnityTechnologies.com.unity.template.urpblank.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.9.0] C:\Users\xhims\.gradle\caches\8.11\transforms\01b0759c45be5acd57b988c62a807a3d\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.9.0] C:\Users\xhims\.gradle\caches\8.11\transforms\01b0759c45be5acd57b988c62a807a3d\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\xhims\.gradle\caches\8.11\transforms\2be88b33c7c135c3fb5a1d54448b4c97\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\xhims\.gradle\caches\8.11\transforms\2be88b33c7c135c3fb5a1d54448b4c97\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\xhims\.gradle\caches\8.11\transforms\2be88b33c7c135c3fb5a1d54448b4c97\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78

@@ -1,0 +1,7 @@
+#Mon Apr 07 19:28:18 EDT 2025
+base.1=D\:\\UnityProjects\\haptic-3D-v1\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\global_synthetics_dex\\release\\mergeReleaseGlobalSynthetics\\classes.dex
+path.1=classes.dex
+base.0=D\:\\UnityProjects\\haptic-3D-v1\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+path.0=classes.dex

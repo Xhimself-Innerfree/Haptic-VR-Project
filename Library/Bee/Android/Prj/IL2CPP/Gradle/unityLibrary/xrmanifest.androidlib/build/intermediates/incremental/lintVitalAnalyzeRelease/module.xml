@@ -1,0 +1,18 @@
+<lint-module
+    format="1"
+    dir="D:\UnityProjects\haptic-3D-v1\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\xrmanifest.androidlib"
+    name=":unityLibrary:xrmanifest.androidlib"
+    type="LIBRARY"
+    maven="Gradle.unityLibrary:xrmanifest.androidlib:unspecified"
+    agpVersion="8.7.2"
+    buildFolder="build"
+    bootClassPath="D:\Unity Editor\6000.0.45f1\Editor\Data\PlaybackEngines\AndroidPlayer\SDK\platforms\android-35\android.jar;D:\Unity Editor\6000.0.45f1\Editor\Data\PlaybackEngines\AndroidPlayer\SDK\build-tools\34.0.0\core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-35"
+    neverShrinking="true">
+  <lintOptions
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>
