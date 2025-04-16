@@ -1,5 +1,6 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
+		<type fullname="Readme" preserve="nothing"/>
 		<type fullname="TCP_Client_X" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.InputSystem">
@@ -107,6 +108,15 @@
 	<assembly fullname="Unity.XR.MockHMD">
 		<type fullname="Unity.XR.MockHMD.MockHMDBuildSettings" preserve="nothing"/>
 		<type fullname="Unity.XR.MockHMD.MockHMDLoader" preserve="nothing"/>
+	</assembly>
+	<assembly fullname="Unity.XR.Simulation">
+		<type fullname="UnityEngine.XR.Simulation.SimulatedBoundedPlane" preserve="nothing"/>
+		<type fullname="UnityEngine.XR.Simulation.SimulatedEnvironmentProbe" preserve="nothing"/>
+		<type fullname="UnityEngine.XR.Simulation.SimulatedMeshClassification" preserve="nothing"/>
+		<type fullname="UnityEngine.XR.Simulation.SimulatedTrackedImage" preserve="nothing"/>
+		<type fullname="UnityEngine.XR.Simulation.SimulationEnvironment" preserve="nothing"/>
+		<type fullname="UnityEngine.XR.Simulation.XRSimulationPreferences" preserve="nothing"/>
+		<type fullname="UnityEngine.XR.Simulation.XRSimulationRuntimeSettings" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="UnityEngine">
 		<type fullname="UnityEditor.AudioManager" preserve="nothing"/>

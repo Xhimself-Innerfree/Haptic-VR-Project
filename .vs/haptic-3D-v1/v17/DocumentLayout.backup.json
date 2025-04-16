@@ -3,7 +3,15 @@
   "WorkspaceRootPath": "D:\\UnityProjects\\haptic-3D-v1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|d:\\unityprojects\\haptic-3d-v1\\assets\\scripts_x\\tcp_client_x.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|d:\\unityprojects\\haptic-3d-v1\\assets\\scripts_x\\player_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts_x\\player_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|d:\\unityprojects\\haptic-3d-v1\\assets\\scripts_x\\camera_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts_x\\camera_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|D:\\UnityProjects\\haptic-3D-v1\\assets\\scripts_x\\tcp_client_x.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts_x\\tcp_client_x.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -19,15 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Player_Ctrl.cs",
+              "DocumentMoniker": "D:\\UnityProjects\\haptic-3D-v1\\Assets\\Scripts_X\\Player_Ctrl.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts_X\\Player_Ctrl.cs",
+              "ToolTip": "D:\\UnityProjects\\haptic-3D-v1\\Assets\\Scripts_X\\Player_Ctrl.cs",
+              "RelativeToolTip": "Assets\\Scripts_X\\Player_Ctrl.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwCQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T12:49:15.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Camera_Ctrl.cs",
+              "DocumentMoniker": "D:\\UnityProjects\\haptic-3D-v1\\Assets\\Scripts_X\\Camera_Ctrl.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts_X\\Camera_Ctrl.cs",
+              "ToolTip": "D:\\UnityProjects\\haptic-3D-v1\\Assets\\Scripts_X\\Camera_Ctrl.cs",
+              "RelativeToolTip": "Assets\\Scripts_X\\Camera_Ctrl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-16T12:12:41.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "TCP_Client_X.cs",
               "DocumentMoniker": "D:\\UnityProjects\\haptic-3D-v1\\Assets\\Scripts_X\\TCP_Client_X.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts_X\\TCP_Client_X.cs",
               "ToolTip": "D:\\UnityProjects\\haptic-3D-v1\\Assets\\Scripts_X\\TCP_Client_X.cs",
               "RelativeToolTip": "Assets\\Scripts_X\\TCP_Client_X.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAEwCYAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwDoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T05:48:43.118Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T05:48:43.118Z"
             }
           ]
         }

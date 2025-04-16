@@ -89,6 +89,13 @@
             "usedInScenes": []
         },
         {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Readme",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "",
             "nativeClass": "ResourceManager",
             "fullManagedTypeName": "",
@@ -1185,6 +1192,55 @@
             "managedAssemblyName": "Unity.XR.Management.dll",
             "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.XR.Management.XRManagerSettings",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.XR.Simulation.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.XR.Simulation.SimulatedBoundedPlane",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.XR.Simulation.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.XR.Simulation.SimulatedEnvironmentProbe",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.XR.Simulation.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.XR.Simulation.SimulatedMeshClassification",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.XR.Simulation.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.XR.Simulation.SimulatedTrackedImage",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.XR.Simulation.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.XR.Simulation.SimulationEnvironment",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.XR.Simulation.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.XR.Simulation.XRSimulationPreferences",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.XR.Simulation.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.XR.Simulation.XRSimulationRuntimeSettings",
             "moduleName": "",
             "usedInScenes": []
         }
@@ -3858,9 +3914,6 @@
     "forceIncludeModules": [],
     "forceExcludeModules": [
         "AMD",
-        "ClusterInput",
-        "ClusterRenderer",
-        "NVIDIA",
-        "VirtualTexturing"
+        "NVIDIA"
     ]
 }

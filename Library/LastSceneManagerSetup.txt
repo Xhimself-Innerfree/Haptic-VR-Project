@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/SampleScene_VR_April 5th.unity
+- path: Assets/Scenes/Haptic_Navigation.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
