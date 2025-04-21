@@ -45,6 +45,10 @@ A training scene was added to this demo: (Assets\Scenes\Training_Navigation.unit
 
 This scene serves as an "obstacle course" to teach participants how to play in VR enviroment.
 
+Panel color:
+
+Yellow: low far obstacle. Red: high far obstacle. Orange: low close obstacle. Purple: high close obstacle.
+
 TODO: 1. Connect our VR with Raspberry Pi (OpenThread Primer) 2. Fixing some minor bugs in the obstacle detection.
 
 I really appreciate your suggestions which help me perfect this demo greatly!
