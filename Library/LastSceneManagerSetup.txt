@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Haptic_Navigation.unity
+- path: Assets/Scenes/Training_Navigation.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

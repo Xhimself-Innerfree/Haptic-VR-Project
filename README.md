@@ -36,3 +36,15 @@ it will draw the buttons (panels) in the hexagonal shape
 the color of the button is red if there is an obstacle in the sector, and green if there is no obstacle
 
 For more info, open the C# script.
+
+Update on April 21th 2025 PS: thanks to Aaron's suggestions
+
+A height  module was added to detect whether an obstacle can be walked over. Two methods are combined: the label way and the RayCast way. I am still working on the perfection of this module to test which method works best (label, raycast, or the hybird). 
+
+A training scene was added to this demo: (Assets\Scenes\Training_Navigation.unity) 
+
+This scene serves as an "obstacle course" to teach participants how to play in VR enviroment.
+
+TODO: 1. Connect our VR with Raspberry Pi (OpenThread Primer) 2. Fixing some minor bugs in the obstacle detection.
+
+I really appreciate your suggestions which help me perfect this demo greatly!
