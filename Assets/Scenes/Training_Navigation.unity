@@ -6138,7 +6138,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9069115365609054727, guid: 60f79905accf3b24fa0114b941f1aac0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.6056958
+      value: 0.27
       objectReference: {fileID: 0}
     - target: {fileID: 9069115365609054727, guid: 60f79905accf3b24fa0114b941f1aac0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6680,7 +6680,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1576488453971394810, guid: a778b631c6253a04899cb31bad047c81, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.43
+      value: 0.28
       objectReference: {fileID: 0}
     - target: {fileID: 1576488453971394810, guid: a778b631c6253a04899cb31bad047c81, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9108,7 +9108,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1245708752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12800,13 +12800,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1671900066}
   - component: {fileID: 1671900067}
+  - component: {fileID: 1671900068}
   m_Layer: 3
-  m_Name: Haptic_GUI
+  m_Name: Obs_Det_GUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1671900066
 Transform:
   m_ObjectHideFlags: 0
@@ -12829,7 +12830,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1671900065}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c264f8e850c0e9e4fb701083df39affb, type: 3}
   m_Name: 
@@ -12844,6 +12845,30 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   center: {x: 790, y: 70}
+--- !u!114 &1671900068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671900065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b47f26008639d3b4c8d79a5db83836fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1733749677}
+  farDetectionRadius: 5
+  nearDetectionRadius: 1
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 2147484032
+  raysPerSector: 5
+  playerBottomOffset: 0.85
+  verticalStep: 0.2
+  StepThreshold: 5
+  center: {x: 790, y: 70}
+  tcpClient: {fileID: 0}
 --- !u!1001 &1691552454
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13156,7 +13181,7 @@ Transform:
   m_GameObject: {fileID: 1733749673}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 43.73, y: 1.23, z: 47.21}
+  m_LocalPosition: {x: 43.73, y: 1.23, z: 45.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13773,6 +13798,62 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2222111361405018444, guid: 88f2fd29f58b9734683512546acec310, type: 3}
   m_PrefabInstance: {fileID: 1782073264}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1784114631
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1784114633}
+  - component: {fileID: 1784114632}
+  m_Layer: 3
+  m_Name: Obs_Det_GUI_Test
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1784114632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784114631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b47f26008639d3b4c8d79a5db83836fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1733749677}
+  farDetectionRadius: 5
+  nearDetectionRadius: 1
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 2147484032
+  raysPerSector: 5
+  playerBottomOffset: 0.85
+  verticalStep: 1
+  StepThreshold: 1
+  center: {x: 790, y: 70}
+  tcpClient: {fileID: 1245708752}
+--- !u!4 &1784114633
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784114631}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.865943, y: 3.117334, z: 12.636689}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1793534865
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15967,6 +16048,7 @@ SceneRoots:
   - {fileID: 533171396}
   - {fileID: 1733749677}
   - {fileID: 1671900066}
+  - {fileID: 1784114633}
   - {fileID: 1245708753}
   - {fileID: 1564202035}
   - {fileID: 699334866}

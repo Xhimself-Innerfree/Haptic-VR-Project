@@ -14,7 +14,7 @@ public class TCP_Client_X : MonoBehaviour
     public string inputMes = "NULL";        //Message to send
     private int recTimes = 0;               //Receive times
     private string recMes = "NULL";         //Received message
-    private Socket Client_Socket;           //Client Socket, connect to the server
+    public Socket Client_Socket;           //Client Socket, connect to the server
     public bool ConnectFlag = false;        //Connect Flag, to connect to the server
     public bool SendFlag = false;           //Send Flag, to send the message
     public bool DisAbleFlag = false;        //Disable Flag, to disable the Client
@@ -69,7 +69,9 @@ public class TCP_Client_X : MonoBehaviour
                 byte[] data = Encoding.UTF8.GetBytes(inputMes); //Convert the message to bytes
                 Client_Socket.Send(data);                       //Send the message
                 SendFlag = false;                               //Reset the send flag
-                Debug.Log("Send: " + inputMes);
+                //Debug.Log("Send: " + inputMes);
+                Client_Socket.Receive(data);                  //Receive the message
+
             }
 
         }
