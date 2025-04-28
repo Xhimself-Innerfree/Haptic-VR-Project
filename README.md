@@ -52,3 +52,13 @@ Yellow: low far obstacle. Red: high far obstacle. Orange: low close obstacle. Pu
 TODO: 1. Connect our VR with Raspberry Pi (OpenThread Primer) 2. Fixing some minor bugs in the obstacle detection.
 
 I really appreciate your suggestions which help me perfect this demo greatly!
+
+
+
+Update on April 27th 2025
+
+rewrite the obstacle detection logic with RayCast() (Assets\Scripts_X\Obs_Det_GUI.cs)
+
+In this new C# script, you can change the number of rays in each sector. If the ray collide the an obstacle, this ray will rise to a high place (you can change the height step) to evaluate the height of an obstacle and categorise it. And the two radii are kept.
+
+Connect it with Raspberry Pi 4B
