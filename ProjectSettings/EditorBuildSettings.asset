@@ -5,12 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/SampleScene_VR_April 5th.unity
+  - enabled: 0
+    path: Assets/Scenes/Debug_1.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 0
-    path: Assets/Scenes/Scene_KeyBoard_TCP.unity
+    path: Assets/Scenes/Debug_2.unity
     guid: b84b1e69651821b4ba640fc12ca9104d
+  - enabled: 1
+    path: Assets/Scenes/Training_Navigation.unity
+    guid: de7724a8b2c65bc4bbecb6e6a84dbb8b
   m_configObjects:
     UnityEditor.XR.VisionOS.VisionOSSettings: {fileID: 11400000, guid: 54695343ab7ab9440bd4ac7c48c88120, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
