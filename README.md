@@ -62,3 +62,15 @@ rewrite the obstacle detection logic with RayCast() (Assets\Scripts_X\Obs_Det_GU
 In this new C# script, you can change the number of rays in each sector. If the ray collide the an obstacle, this ray will rise to a high place (you can change the height step) to evaluate the height of an obstacle and categorise it. And the two radii are kept.
 
 Connect it with Raspberry Pi 4B
+
+Update on May 5th 2025
+
+Dynamic Scene added here (haptic-3D-v1\Assets\Scenes\Newest Version\Dynamic_Navi.unity) not the "Dynamic_Navi" folder
+Here, An AI module (Unity.AI_Navigation)was added to make the NPCs mobile. 
+
+In this demo, three common dynamic situtions are presented (man, car, traffic light)
+
+you can check there is a man walking randomly on the lawn, a man and a car moving on their set paths.
+Walk around them to see the changes of your panels.
+
+A traffic light is added as well, once the traffic light turns red. your panel turns purplr. Only standing infront of this traffic light can see this change (-45 degrees to 45 degrees)
