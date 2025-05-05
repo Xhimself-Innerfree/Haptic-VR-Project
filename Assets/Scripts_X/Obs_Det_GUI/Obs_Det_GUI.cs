@@ -16,6 +16,8 @@ public class Obs_Det_GUI : MonoBehaviour
     public int raysPerSector = 5; // Number of rays per sector for precision
     private int[] sectorStates = new int[6]; // Stores the state of each sector (0: green, 1: yellow, 2: red, 3: orange, 4: purple)
     
+    // New variable for HaloTrafficLight reference
+    public HaloTrafficLight trafficLight; // Reference to the HaloTrafficLight instance
 
     // Offset for lower position
     public float playerBottomOffset = 0.85f; // Offset below the player's position
@@ -45,6 +47,9 @@ public class Obs_Det_GUI : MonoBehaviour
 
         // Perform obstacle detection
         DetectObstaclesWithRayCast();
+
+        // Check traffic light state and update GUI
+        CheckTrafficLightState();
 
         // Send sectorStates via TCP
         SendSectorStates();
@@ -143,6 +148,29 @@ public class Obs_Det_GUI : MonoBehaviour
             }
 
             sectorStates[i] = temp;
+        }
+    }
+
+    // ...existing code...
+
+    void CheckTrafficLightState()
+    {
+        if (trafficLight != null && trafficLight.GetState() == HaloTrafficLight.LightState.Red) // Check if the traffic light is red
+        {
+            Vector3 directionToPlayer = player.position - trafficLight.transform.position;
+            float angle = Vector3.Angle(trafficLight.transform.forward, directionToPlayer);
+
+            // Check if the player is in front of the traffic light (within a 90-degree cone)
+            if (angle < 45f)
+            {
+                // Calculate the sector index based on the direction
+                Vector3 forward = player.forward;
+                float sectorAngle = Vector3.SignedAngle(forward, directionToPlayer, Vector3.up);
+                int sectorIndex = Mathf.FloorToInt((sectorAngle + 180f) / 60f) % 6;
+
+                // Set only the corresponding sector state to purple
+                sectorStates[sectorIndex] = 4; // Purple for the specific sector
+            }
         }
     }
 

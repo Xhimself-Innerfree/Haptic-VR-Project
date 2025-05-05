@@ -4,7 +4,7 @@ using UnityEngine.AI;
 public class RandomMove : MonoBehaviour
 {
     public NavMeshAgent agent;
-    public float range; // Ëæ»úÒÆ¶¯µÄ·¶Î§
+    public float range; // 
 
     void Start()
     {

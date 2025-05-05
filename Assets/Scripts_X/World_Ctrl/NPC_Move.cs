@@ -2,47 +2,53 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+
 public class NPC_Move : MonoBehaviour
 {
     public NavMeshAgent agent;
-    public float range; 
+    public float Radius;
 
-    public Transform centrePoint; //centre of the area the agent wants to move around in
-    //instead of centrePoint you can set it as the transform of the agent if you don't care about a specific area
+    public Transform centrePoint; // Center point, defines the center of the movement range
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
     }
 
-
     void Update()
     {
-        if (agent.remainingDistance <= agent.stoppingDistance) //done with path
+        if (agent.remainingDistance <= agent.stoppingDistance) // If the target point is reached
         {
             Vector3 point;
-            if (RandomPoint(centrePoint.position, range, out point)) //pass in our centre point and radius of area
+            if (RandomPoint(centrePoint.position, Radius, out point)) // Generate a random point
             {
-                Debug.DrawRay(point, Vector3.up, Color.blue, 1.0f); //so you can see with gizmos
-                agent.SetDestination(point);
+                Debug.DrawRay(point, Vector3.up, Color.blue, 1.0f); // Visualize the random point with a blue ray
+                agent.SetDestination(point); // Set the target point
             }
         }
-
     }
+
     bool RandomPoint(Vector3 center, float range, out Vector3 result)
     {
-
-        Vector3 randomPoint = center + Random.insideUnitSphere * range; //random point in a sphere 
+        Vector3 randomPoint = center + Random.insideUnitSphere * range; // Generate a random point within a sphere
         NavMeshHit hit;
-        if (NavMesh.SamplePosition(randomPoint, out hit, 1.0f, NavMesh.AllAreas)) //documentation: https://docs.unity3d.com/ScriptReference/AI.NavMesh.SamplePosition.html
+        if (NavMesh.SamplePosition(randomPoint, out hit, 1.0f, NavMesh.AllAreas)) // Ensure the random point is on the navigation mesh
         {
-            //the 1.0f is the max distance from the random point to a point on the navmesh, might want to increase if range is big
-            //or add a for loop like in the documentation
             result = hit.position;
             return true;
         }
 
         result = Vector3.zero;
         return false;
+    }
+
+    // Draw the movement range Gizmos
+    private void OnDrawGizmos()
+    {
+        if (centrePoint != null)
+        {
+            Gizmos.color = Color.green; // Set the Gizmos color to green
+            Gizmos.DrawWireSphere(centrePoint.position, Radius); // Draw a green wireframe sphere to represent the movement range
+        }
     }
 }
