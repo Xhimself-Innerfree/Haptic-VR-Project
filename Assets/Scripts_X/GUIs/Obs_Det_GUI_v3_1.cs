@@ -5,8 +5,8 @@ using UnityEngine.UIElements;
 using System.Net.Sockets;
 
 //This is the updated obstacle detection script with raycast for detection
-//by JL May 8 2025
-public class Obs_Det_GUI : MonoBehaviour
+//by JL May 9 2025
+public class Obs_Det_GUI_v3_1 : MonoBehaviour
 {
     // OBS_DETECTION
     public Transform player; // Player transform
@@ -14,12 +14,16 @@ public class Obs_Det_GUI : MonoBehaviour
     public float nearDetectionRadius = 1f; // Near detection radius
     public LayerMask obstacleLayer; // Layer for all obstacles
     public int raysPerSector = 5; // Number of rays per sector for precision
-    
+
+    public float CarRadius = 3f; // Detection radius for cars
+    public LayerMask carLayer;   // LayerMask for car objects
+
     // Define the updated struct
     public struct Obs_Sector_State
     {
         public float currentDistance; // Distance to the detected object
         public float minDistance; // Minimum distance detected
+        public float preDistance; // Previous distance to the detected object
         public float timer; // Timer for when minDistance < currentDistance
         public int realState; // Actual state
         public int showState; // Displayed state
@@ -28,7 +32,7 @@ public class Obs_Det_GUI : MonoBehaviour
 
     // Replace sectorStates with an array of updated Obs_Sector_State
     private Obs_Sector_State[] sectorStates = new Obs_Sector_State[6];
-    
+
     // New variable for HaloTrafficLight reference
     public HaloTrafficLight trafficLight; // Reference to the HaloTrafficLight instance
 
@@ -46,7 +50,7 @@ public class Obs_Det_GUI : MonoBehaviour
 
     // TCP Client
     public TCP_Client_X tcpClient; // Reference to the TCP_Client_X script
-    
+
 
     void Start()
     {
@@ -60,7 +64,8 @@ public class Obs_Det_GUI : MonoBehaviour
                 timer = 0f,
                 realState = 0, // Default to green
                 showState = 0, // Default to green
-                resetTimer = 0f
+                resetTimer = 0f,
+                preDistance = 6f // Default to a value greater than detection range
             };
         }
     }
@@ -73,12 +78,11 @@ public class Obs_Det_GUI : MonoBehaviour
         // Perform obstacle detection
         DetectObstaclesWithRayCast();
 
-        // Check traffic light state and update GUI
+        // Check traffic light state and update GUI (now before sending sector states)
         CheckTrafficLightState();
 
         // Send sectorStates via TCP
         SendSectorStates();
-        
     }
 
     // Detect obstacles using multiple RayCasts per sector
@@ -86,146 +90,182 @@ public class Obs_Det_GUI : MonoBehaviour
     {
         Vector3 forward = player.forward;
 
-        // Cast multiple rays in each sector
         for (int i = 0; i < 6; i++)
         {
             float sectorStartAngle = i * 60f - 30f;
             float sectorEndAngle = (i + 1) * 60f - 30f;
             float angleStep = (sectorEndAngle - sectorStartAngle) / raysPerSector;
-            int tempState = 0; // Temporary variable to store the sector state
-            float closestDistance = float.MaxValue; // Track the closest detected object
+            int tempState = 0;
+            float closestDistance = float.MaxValue;
+
+            int tempShowState = 0;
 
             for (int j = 0; j < raysPerSector; j++)
             {
                 float currentAngle = sectorStartAngle + j * angleStep;
                 Vector3 rayDirection = Quaternion.Euler(0, currentAngle, 0) * forward;
 
-                // Check near radius first (higher priority)
+                // Near radius check
                 if (Physics.Raycast(playerBottom, rayDirection, out RaycastHit nearHit, nearDetectionRadius, obstacleLayer))
                 {
                     int verticalSteps = 0;
                     Vector3 verticalStart = playerBottom;
-
-                    // Perform vertical raycasting
                     while (verticalSteps < StepThreshold)
                     {
-                        verticalStart += Vector3.up * verticalStep; // Move up by verticalStep
+                        verticalStart += Vector3.up * verticalStep;
                         if (Physics.Raycast(verticalStart, rayDirection, nearDetectionRadius, obstacleLayer))
                         {
                             verticalSteps++;
                         }
                         else
                         {
-                            break; // Stop if no collision
+                            break;
                         }
                     }
-
-                    // Determine obstacle type based on vertical steps
-                    int newState = (verticalSteps < StepThreshold) ? 3 : 4; // 3: Orange (Low), 4: Purple (High)
-
-                    // Update sector state only if the new state has higher priority
+                    int newState = (verticalSteps < StepThreshold) ? 3 : 4;
                     if (newState > tempState)
-                    {
                         tempState = newState;
-                    }
-
-                    // Update closest distance
                     closestDistance = Mathf.Min(closestDistance, nearHit.distance);
-
-                    break; // Skip further rays in this sector
+                    break;
                 }
-
-                // Check far radius if no near obstacle is detected
+                // Far radius check
                 if (Physics.Raycast(playerBottom, rayDirection, out RaycastHit farHit, farDetectionRadius, obstacleLayer))
                 {
                     int verticalSteps = 0;
                     Vector3 verticalStart = playerBottom;
-
-                    // Perform vertical raycasting
                     while (verticalSteps < StepThreshold)
                     {
-                        verticalStart += Vector3.up * verticalStep; // Move up by verticalStep
+                        verticalStart += Vector3.up * verticalStep;
                         if (Physics.Raycast(verticalStart, rayDirection, farDetectionRadius, obstacleLayer))
                         {
                             verticalSteps++;
                         }
                         else
                         {
-                            break; // Stop if no collision
+                            break;
                         }
                     }
-
-                    // Determine obstacle type based on vertical steps
-                    int newState = (verticalSteps < StepThreshold) ? 1 : 2; // 1: Yellow (Low), 2: Red (High)
-
-                    // Update sector state only if the new state has higher priority
+                    int newState = (verticalSteps < StepThreshold) ? 1 : 2;
                     if (newState > tempState)
-                    {
                         tempState = newState;
-                    }
-
-                    // Update closest distance
                     closestDistance = Mathf.Min(closestDistance, farHit.distance);
-
-                    break; // Skip further rays in this sector
+                    break;
                 }
             }
 
-            // Update the sector state
-            sectorStates[i].realState = tempState;
-            sectorStates[i].currentDistance = closestDistance;
-
-            // Logic for obstacle detection and panel updates
-            if (sectorStates[i].realState == 0) // No obstacles detected
+            // --- Car detection logic (fixed angle normalization) ---
+            Collider[] cars = Physics.OverlapSphere(playerBottom, CarRadius, carLayer);
+            foreach (var car in cars)
             {
-                sectorStates[i].minDistance = 6f; // Reset minDistance to default
-                sectorStates[i].showState = 0; // Set panel to green
+                Vector3 dirToCar = (car.transform.position - playerBottom);
+                float distToCar = dirToCar.magnitude;
+                if (distToCar < CarRadius)
+                {
+                    // Calculate angle between player's forward and direction to car
+                    float angleToCar = Vector3.SignedAngle(forward, dirToCar, Vector3.up);
+
+                    // Normalize angles to [0, 360)
+                    float normAngleToCar = (angleToCar + 360f) % 360f;
+                    float normSectorStart = (sectorStartAngle + 360f) % 360f;
+                    float normSectorEnd = (sectorEndAngle + 360f) % 360f;
+
+                    bool inSector = false;
+                    if (normSectorStart < normSectorEnd)
+                    {
+                        inSector = normAngleToCar >= normSectorStart && normAngleToCar < normSectorEnd;
+                    }
+                    else
+                    {
+                        // Sector wraps around 360
+                        inSector = normAngleToCar >= normSectorStart || normAngleToCar < normSectorEnd;
+                    }
+
+                    if (inSector)
+                    {
+                        // Set to purple (4) and break, highest priority
+                        tempState = 4;
+                        closestDistance = Mathf.Min(closestDistance, distToCar);
+                        break;
+                    }
+                }
+            }
+
+            // Store previous distance
+            sectorStates[i].preDistance = sectorStates[i].currentDistance;
+            sectorStates[i].currentDistance = closestDistance;
+            sectorStates[i].realState = tempState;
+
+            // --- New display logic implementation ---
+            if (sectorStates[i].realState == 0)
+            {
+                // No obstacle detected, reset everything
+                sectorStates[i].minDistance = 6f;
+                sectorStates[i].timer = 0f;
+                sectorStates[i].resetTimer = 0f;
+                tempShowState = 0;
             }
             else
             {
-                // Update currentDistance and start timer
-                if (sectorStates[i].currentDistance < sectorStates[i].minDistance)
-                {
-                    sectorStates[i].minDistance = sectorStates[i].currentDistance;
-                    sectorStates[i].showState = sectorStates[i].realState; // Update panel with obstacle state
-                    sectorStates[i].timer = 0f; // Reset timer
+                // Obstacle detected (or will be overwritten by traffic light logic)
+                float prev = sectorStates[i].preDistance;
+                float curr = sectorStates[i].currentDistance;
+                bool isApproaching = curr < prev - 0.01f;
+                bool isUnchangedOrAway = curr >= prev - 0.01f;
 
-                    // Ensure realState is assigned to showState when minDistance decreases
-                    sectorStates[i].showState = sectorStates[i].realState;
+                if (isApproaching)
+                {
+                    // Distance decreasing: always show, reset timers
+                    tempShowState = sectorStates[i].realState;
+                    sectorStates[i].timer = 0f;
+                    sectorStates[i].resetTimer = 0f;
                 }
                 else
                 {
+                    // Distance unchanged or increasing
                     sectorStates[i].timer += Time.deltaTime;
 
-                    // If currentDistance > minDistance, adjust minDistance
-                    sectorStates[i].minDistance = Mathf.Max(sectorStates[i].currentDistance - 0.1f, nearDetectionRadius);
-
-                    // If minDistance > currentDistance for 3 seconds, update panel
-                    if (sectorStates[i].timer >= 3f)
+                    if (sectorStates[i].timer < 0.5f)
                     {
-                        sectorStates[i].showState = sectorStates[i].realState; // Remind player of obstacle
-                        sectorStates[i].timer = 0f; // Reset timer
+                        // Show for 0.5s
+                        tempShowState = sectorStates[i].realState;
+                        sectorStates[i].resetTimer = 0f;
+                    }
+                    else
+                    {
+                        // After 0.5s, start 2.5s off/on cycle
+                        sectorStates[i].resetTimer += Time.deltaTime;
+                        float cycle = sectorStates[i].resetTimer % 3.0f;
+                        if (cycle < 0.5f)
+                        {
+                            tempShowState = sectorStates[i].realState; // Show for 0.5s
+                        }
+                        else
+                        {
+                            tempShowState = 0; // Hide for 2.5s
+                        }
                     }
                 }
 
-                // After 0.5 seconds, set panel to green but retain realState
-                if (sectorStates[i].timer >= 0.5f)
+                // Update minDistance logic if needed
+                if (curr <= sectorStates[i].minDistance)
                 {
-                    sectorStates[i].showState = 0; // Set panel to green
+                    sectorStates[i].minDistance = curr;
+                }
+                else
+                {
+                    sectorStates[i].minDistance = Mathf.Max(curr - 0.001f, nearDetectionRadius);
                 }
             }
 
-            // Debugging logs to track values
-            Debug.Log($"Sector {i}: realState={sectorStates[i].realState}, showState={sectorStates[i].showState}, minDistance={sectorStates[i].minDistance}, currentDistance={sectorStates[i].currentDistance}");
-
+            // Assign the final value to showState
+            sectorStates[i].showState = tempShowState;
         }
     }
 
-    
-
+    // Enhanced: Traffic light detection and display logic
     void CheckTrafficLightState()
     {
-        if (trafficLight != null && trafficLight.GetState() == HaloTrafficLight.LightState.Red) // Check if the traffic light is red
+        if (trafficLight != null && trafficLight.GetState() == HaloTrafficLight.LightState.Red)
         {
             Vector3 directionToPlayer = player.position - trafficLight.transform.position;
             float angle = Vector3.Angle(trafficLight.transform.forward, directionToPlayer);
@@ -238,8 +278,40 @@ public class Obs_Det_GUI : MonoBehaviour
                 float sectorAngle = Vector3.SignedAngle(forward, directionToPlayer, Vector3.up);
                 int sectorIndex = Mathf.FloorToInt((sectorAngle + 180f) / 60f) % 6;
 
-                // Set only the corresponding sector state to purple
-                sectorStates[sectorIndex].realState = 4; // Purple for the specific sector
+                // --- Traffic light purple logic: override both realState and showState with purple (4) ---
+                // Use the same display logic as obstacles: if already purple, keep cycling, else reset timers
+                if (sectorStates[sectorIndex].realState != 4)
+                {
+                    // Set to purple and reset timers for new red light detection
+                    sectorStates[sectorIndex].realState = 4;
+                    sectorStates[sectorIndex].timer = 0f;
+                    sectorStates[sectorIndex].resetTimer = 0f;
+                    sectorStates[sectorIndex].showState = 4;
+                }
+                else
+                {
+                    // Already purple, apply the same display logic as obstacles
+                    // (simulate as if the distance is unchanged)
+                    sectorStates[sectorIndex].timer += Time.deltaTime;
+                    if (sectorStates[sectorIndex].timer < 0.5f)
+                    {
+                        sectorStates[sectorIndex].showState = 4;
+                        sectorStates[sectorIndex].resetTimer = 0f;
+                    }
+                    else
+                    {
+                        sectorStates[sectorIndex].resetTimer += Time.deltaTime;
+                        float cycle = sectorStates[sectorIndex].resetTimer % 3.0f;
+                        if (cycle < 0.5f)
+                        {
+                            sectorStates[sectorIndex].showState = 4;
+                        }
+                        else
+                        {
+                            sectorStates[sectorIndex].showState = 0;
+                        }
+                    }
+                }
             }
         }
     }
@@ -302,6 +374,10 @@ public class Obs_Det_GUI : MonoBehaviour
             Vector3 DivideDirection = Quaternion.Euler(0, sectorStartAngle, 0) * forward;
             Gizmos.DrawRay(player.position - new Vector3(0, playerBottomOffset, 0), DivideDirection * farDetectionRadius);
         }
+
+        // Draw CarRadius
+        Gizmos.color = new Color(0.5f, 0, 0.5f, 0.2f); // semi-transparent purple
+        Gizmos.DrawWireSphere(player.position - new Vector3(0, playerBottomOffset, 0), CarRadius);
     }
 
     // Draw GUI for obstacle states

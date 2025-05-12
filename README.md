@@ -74,3 +74,19 @@ you can check there is a man walking randomly on the lawn, a man and a car movin
 Walk around them to see the changes of your panels.
 
 A traffic light is added as well, once the traffic light turns red. your panel turns purple. Only standing infront of this traffic light can see this change (-45 degrees to 45 degrees)
+
+Update on May 12th 2025
+
+Based on Aaron's valuable inspiration, a sleep timer is added to the Obs_Det_GUI to stop it from vibrating all the time.
+the logic as follows:
+the "Ray" hits an obstacle and returns a struct with 1 the distance and 2 the type of obstacle. So, if the distance between player and obstacle is decreasing which means that the player is getting closer to the obstacle, the unit will keep vibrating to inform the user of incoming situation whether passsive or active(the obstacle is moving to the player or the player is walking to it). However, the sleep timer is "When the distance between player and obstacle is not decreasing", the unit will keep vibrating for 0.5 seconds and sleep for 2.5 seconds then vibrate for 0.5 seconds and so on. In a sleep duration, if the distance decreace again, the unit will vibrate at once. Plus, the sleep duration can be changed based on users' preferences.
+
+For the detection of "Cars" or something is moving very fast.
+A label based method is used here. And there is a CarRadius for its detection. A RayCast method will replace it soon.
+
+For multiple haptic units, a Balance_GUI is added to assist the player to keep balance
+This haptic device has 7 units, the center unit present the height differences between where the player stand on and where the player will step on if player moves forward. (height difference = step on - stand on, 0.1 < yellow < 0.3, 0.3 < orange, -0.3 < red < -0.1, purple < -0.3)
+And the 6 units around represent the orientation player should lean to keep the balance of his body.(Angle: green < 5, yellow < 15, red < 30, 30 < orange )
+There are a few slopes on the lean, try the Balance_GUI on them!
+
+RIght now, "Obs_Det_GUI.cs" has 472 lines and contains too much contents which makes it difficult to understand. So, I am going to devide it into several minor modules. 

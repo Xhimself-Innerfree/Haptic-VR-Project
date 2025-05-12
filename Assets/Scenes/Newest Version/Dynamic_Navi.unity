@@ -24844,7 +24844,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &738900771
 Transform:
   m_ObjectHideFlags: 0
@@ -28679,6 +28679,8 @@ GameObject:
   - component: {fileID: 860870353}
   - component: {fileID: 860870352}
   - component: {fileID: 860870354}
+  - component: {fileID: 860870355}
+  - component: {fileID: 860870356}
   m_Layer: 3
   m_Name: Obs_Det_GUI
   m_TagString: Untagged
@@ -28693,7 +28695,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 860870351}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b47f26008639d3b4c8d79a5db83836fb, type: 3}
   m_Name: 
@@ -28704,7 +28706,7 @@ MonoBehaviour:
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 2147483776
-  raysPerSector: 5
+  raysPerSector: 8
   trafficLight: {fileID: 2097664666}
   playerBottomOffset: 0.85
   verticalStep: 1
@@ -28749,6 +28751,62 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &860870355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860870351}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d2756f419ef9044991eed7b5d8fc0b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 283524687}
+  farDetectionRadius: 5
+  nearDetectionRadius: 1
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 2147483776
+  raysPerSector: 8
+  trafficLight: {fileID: 2097664666}
+  playerBottomOffset: 0.85
+  verticalStep: 1
+  StepThreshold: 1
+  enableGizmos: 1
+  center: {x: 900, y: 70}
+  tcpClient: {fileID: 322194337}
+--- !u!114 &860870356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860870351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c42948c3d7715b4eb4f20a00b4a3905, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 283524687}
+  farDetectionRadius: 5
+  nearDetectionRadius: 1
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 2147484032
+  raysPerSector: 8
+  CarRadius: 40
+  carLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  trafficLight: {fileID: 2097664666}
+  playerBottomOffset: 0.85
+  verticalStep: 1
+  StepThreshold: 1
+  enableGizmos: 1
+  center: {x: 900, y: 70}
+  tcpClient: {fileID: 322194337}
 --- !u!1001 &861135326
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62401,7 +62459,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1af0a2c8773f85c40bdb120f32cd8a8a, type: 3}
       propertyPath: m_RootOrder
@@ -78092,7 +78150,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1509205237}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
   m_Name: 
@@ -80197,7 +80255,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1998166441
 Transform:
   m_ObjectHideFlags: 0

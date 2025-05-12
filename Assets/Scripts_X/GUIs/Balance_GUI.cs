@@ -71,6 +71,41 @@ public class Balance_GUI : MonoBehaviour
             {
                 sectorStates[sectorIndex] = 3; // Orange
             }
+
+            // --- New logic for heightDifference and central point color ---
+            // Raycast directly under the player to get current ground height
+            if (Physics.Raycast(player.position, Vector3.down, out RaycastHit hitBelow, raycastDistance))
+            {
+                heightDifference = hitAhead.point.y - hitBelow.point.y;
+
+                // Set central point color based on heightDifference
+                // Thresholds can be adjusted as needed
+                if (heightDifference > 0.1f && heightDifference <= 0.3f)
+                {
+                    sectorStates[6] = 1; // Yellow: slightly higher ahead
+                }
+                else if (heightDifference > 0.3f)
+                {
+                    sectorStates[6] = 3; // Orange: much higher ahead
+                }
+                else if (heightDifference < -0.1f && heightDifference >= -0.3f)
+                {
+                    sectorStates[6] = 2; // Red: slightly lower ahead
+                }
+                else if (heightDifference < -0.3f)
+                {
+                    sectorStates[6] = 4; // Purple: much lower ahead
+                }
+                else
+                {
+                    sectorStates[6] = 0; // Green: about the same height
+                }
+            }
+            else
+            {
+                // If no ground below player, set central to purple
+                sectorStates[6] = 4;
+            }
         }
         else
         {

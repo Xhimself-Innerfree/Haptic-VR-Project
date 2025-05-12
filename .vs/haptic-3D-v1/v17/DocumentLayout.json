@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "D:\\UnityProjects\\haptic-3D-v1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|D:\\UnityProjects\\haptic-3D-v1\\assets\\scripts_x\\guis\\obs_det_gui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts_x\\guis\\obs_det_gui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|d:\\unityprojects\\haptic-3d-v1\\assets\\scripts_x\\guis\\obs_det_gui_v3_1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts_x\\guis\\obs_det_gui_v3_1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|D:\\UnityProjects\\haptic-3D-v1\\assets\\scripts_x\\guis\\obs_det_gui_v3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts_x\\guis\\obs_det_gui_v3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -13,20 +17,33 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedWidth": 256,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Obs_Det_GUI.cs",
-              "DocumentMoniker": "D:\\UnityProjects\\haptic-3D-v1\\Assets\\Scripts_X\\GUIs\\Obs_Det_GUI.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts_X\\GUIs\\Obs_Det_GUI.cs",
-              "ToolTip": "D:\\UnityProjects\\haptic-3D-v1\\Assets\\Scripts_X\\GUIs\\Obs_Det_GUI.cs",
-              "RelativeToolTip": "Assets\\Scripts_X\\GUIs\\Obs_Det_GUI.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAQwFsAAAAzAAAAAAAAAA==",
+              "Title": "Obs_Det_GUI_v3_1.cs",
+              "DocumentMoniker": "D:\\UnityProjects\\haptic-3D-v1\\Assets\\Scripts_X\\GUIs\\Obs_Det_GUI_v3_1.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts_X\\GUIs\\Obs_Det_GUI_v3_1.cs",
+              "ToolTip": "D:\\UnityProjects\\haptic-3D-v1\\Assets\\Scripts_X\\GUIs\\Obs_Det_GUI_v3_1.cs",
+              "RelativeToolTip": "Assets\\Scripts_X\\GUIs\\Obs_Det_GUI_v3_1.cs",
+              "ViewState": "AgIAANkAAAAAAAAAAAAUwPIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T02:35:32.997Z",
+              "WhenOpened": "2025-05-12T11:48:25.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Obs_Det_GUI_v3.cs",
+              "DocumentMoniker": "D:\\UnityProjects\\haptic-3D-v1\\Assets\\Scripts_X\\GUIs\\Obs_Det_GUI_v3.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts_X\\GUIs\\Obs_Det_GUI_v3.cs",
+              "ToolTip": "D:\\UnityProjects\\haptic-3D-v1\\Assets\\Scripts_X\\GUIs\\Obs_Det_GUI_v3.cs",
+              "RelativeToolTip": "Assets\\Scripts_X\\GUIs\\Obs_Det_GUI_v3.cs",
+              "ViewState": "AgIAAIYBAAAAAAAAAAAuwJ0BAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T10:58:15.5Z",
               "EditorCaption": ""
             }
           ]
