@@ -5,7 +5,7 @@ using UnityEngine.UIElements;
 using System.Net.Sockets;
 
 //This is the updated obstacle detection script with raycast for detection
-//by JL April 25 2025
+//by JL May 8 2025
 public class Obs_Det_GUI : MonoBehaviour
 {
     // OBS_DETECTION
@@ -14,7 +14,20 @@ public class Obs_Det_GUI : MonoBehaviour
     public float nearDetectionRadius = 1f; // Near detection radius
     public LayerMask obstacleLayer; // Layer for all obstacles
     public int raysPerSector = 5; // Number of rays per sector for precision
-    private int[] sectorStates = new int[6]; // Stores the state of each sector (0: green, 1: yellow, 2: red, 3: orange, 4: purple)
+    
+    // Define the updated struct
+    public struct Obs_Sector_State
+    {
+        public float currentDistance; // Distance to the detected object
+        public float minDistance; // Minimum distance detected
+        public float timer; // Timer for when minDistance < currentDistance
+        public int realState; // Actual state
+        public int showState; // Displayed state
+        public float resetTimer; // Timer for resetting minDistance
+    }
+
+    // Replace sectorStates with an array of updated Obs_Sector_State
+    private Obs_Sector_State[] sectorStates = new Obs_Sector_State[6];
     
     // New variable for HaloTrafficLight reference
     public HaloTrafficLight trafficLight; // Reference to the HaloTrafficLight instance
@@ -25,18 +38,30 @@ public class Obs_Det_GUI : MonoBehaviour
     public float verticalStep = 1f; // Step size for vertical height detection
     public int StepThreshold = 1; // Number of steps to check for vertical height
 
+    //OnDrawGizmos
+    public bool enableGizmos = true; // Enable or disable Gizmos for visualization
+
     // GUI
-    public Vector2 center = new Vector2(790, 70); // Center of the GUI
+    public Vector2 center = new Vector2(900, 70); // Center of the GUI
 
     // TCP Client
     public TCP_Client_X tcpClient; // Reference to the TCP_Client_X script
+    
 
     void Start()
     {
         // Initialize sector states
         for (int i = 0; i < 6; i++)
         {
-            sectorStates[i] = 0; // Default to green
+            sectorStates[i] = new Obs_Sector_State
+            {
+                currentDistance = 6f, // Default to a value greater than detection range
+                minDistance = 6f, // Default to a value greater than detection range
+                timer = 0f,
+                realState = 0, // Default to green
+                showState = 0, // Default to green
+                resetTimer = 0f
+            };
         }
     }
 
@@ -53,18 +78,12 @@ public class Obs_Det_GUI : MonoBehaviour
 
         // Send sectorStates via TCP
         SendSectorStates();
+        
     }
 
     // Detect obstacles using multiple RayCasts per sector
     void DetectObstaclesWithRayCast()
     {
-        Debug.Log($"{sectorStates[0]}{sectorStates[1]}{sectorStates[2]}{sectorStates[3]}{sectorStates[4]}{sectorStates[5]}");
-        // Reset sector states
-        for (int i = 0; i < 6; i++)
-        {
-            sectorStates[i] = 0; // Default to green
-        }
-
         Vector3 forward = player.forward;
 
         // Cast multiple rays in each sector
@@ -73,7 +92,8 @@ public class Obs_Det_GUI : MonoBehaviour
             float sectorStartAngle = i * 60f - 30f;
             float sectorEndAngle = (i + 1) * 60f - 30f;
             float angleStep = (sectorEndAngle - sectorStartAngle) / raysPerSector;
-            int temp = 0; //A temporary variable to store the sector state
+            int tempState = 0; // Temporary variable to store the sector state
+            float closestDistance = float.MaxValue; // Track the closest detected object
 
             for (int j = 0; j < raysPerSector; j++)
             {
@@ -104,12 +124,14 @@ public class Obs_Det_GUI : MonoBehaviour
                     int newState = (verticalSteps < StepThreshold) ? 3 : 4; // 3: Orange (Low), 4: Purple (High)
 
                     // Update sector state only if the new state has higher priority
-                    if (newState > temp)
+                    if (newState > tempState)
                     {
-                        temp = newState;
+                        tempState = newState;
                     }
 
-                    //Debug.Log($"Near Ray hit {nearHit.collider.name} in sector {i}, Vertical Steps: {verticalSteps}, Distance: {nearHit.distance}");
+                    // Update closest distance
+                    closestDistance = Mathf.Min(closestDistance, nearHit.distance);
+
                     break; // Skip further rays in this sector
                 }
 
@@ -137,21 +159,69 @@ public class Obs_Det_GUI : MonoBehaviour
                     int newState = (verticalSteps < StepThreshold) ? 1 : 2; // 1: Yellow (Low), 2: Red (High)
 
                     // Update sector state only if the new state has higher priority
-                    if (newState > temp)
+                    if (newState > tempState)
                     {
-                        temp = newState;
+                        tempState = newState;
                     }
 
-                    //Debug.Log($"Far Ray hit {farHit.collider.name} in sector {i}, Vertical Steps: {verticalSteps}, Distance: {farHit.distance}");
+                    // Update closest distance
+                    closestDistance = Mathf.Min(closestDistance, farHit.distance);
+
                     break; // Skip further rays in this sector
                 }
             }
 
-            sectorStates[i] = temp;
+            // Update the sector state
+            sectorStates[i].realState = tempState;
+            sectorStates[i].currentDistance = closestDistance;
+
+            // Logic for obstacle detection and panel updates
+            if (sectorStates[i].realState == 0) // No obstacles detected
+            {
+                sectorStates[i].minDistance = 6f; // Reset minDistance to default
+                sectorStates[i].showState = 0; // Set panel to green
+            }
+            else
+            {
+                // Update currentDistance and start timer
+                if (sectorStates[i].currentDistance < sectorStates[i].minDistance)
+                {
+                    sectorStates[i].minDistance = sectorStates[i].currentDistance;
+                    sectorStates[i].showState = sectorStates[i].realState; // Update panel with obstacle state
+                    sectorStates[i].timer = 0f; // Reset timer
+
+                    // Ensure realState is assigned to showState when minDistance decreases
+                    sectorStates[i].showState = sectorStates[i].realState;
+                }
+                else
+                {
+                    sectorStates[i].timer += Time.deltaTime;
+
+                    // If currentDistance > minDistance, adjust minDistance
+                    sectorStates[i].minDistance = Mathf.Max(sectorStates[i].currentDistance - 0.1f, nearDetectionRadius);
+
+                    // If minDistance > currentDistance for 3 seconds, update panel
+                    if (sectorStates[i].timer >= 3f)
+                    {
+                        sectorStates[i].showState = sectorStates[i].realState; // Remind player of obstacle
+                        sectorStates[i].timer = 0f; // Reset timer
+                    }
+                }
+
+                // After 0.5 seconds, set panel to green but retain realState
+                if (sectorStates[i].timer >= 0.5f)
+                {
+                    sectorStates[i].showState = 0; // Set panel to green
+                }
+            }
+
+            // Debugging logs to track values
+            Debug.Log($"Sector {i}: realState={sectorStates[i].realState}, showState={sectorStates[i].showState}, minDistance={sectorStates[i].minDistance}, currentDistance={sectorStates[i].currentDistance}");
+
         }
     }
 
-    // ...existing code...
+    
 
     void CheckTrafficLightState()
     {
@@ -169,7 +239,7 @@ public class Obs_Det_GUI : MonoBehaviour
                 int sectorIndex = Mathf.FloorToInt((sectorAngle + 180f) / 60f) % 6;
 
                 // Set only the corresponding sector state to purple
-                sectorStates[sectorIndex] = 4; // Purple for the specific sector
+                sectorStates[sectorIndex].realState = 4; // Purple for the specific sector
             }
         }
     }
@@ -178,6 +248,7 @@ public class Obs_Det_GUI : MonoBehaviour
     void OnDrawGizmos()
     {
         if (player == null) return;
+        if (!enableGizmos) return;
 
         // Draw far detection radius
         Gizmos.color = Color.green;
@@ -202,7 +273,7 @@ public class Obs_Det_GUI : MonoBehaviour
                 Vector3 rayDirection = Quaternion.Euler(0, currentAngle, 0) * forward;
 
                 // Set color based on sector state
-                switch (sectorStates[i])
+                switch (sectorStates[i].showState)
                 {
                     case 4: // Purple for near High obstacles
                         Gizmos.color = new Color(0.5f, 0, 0.5f);
@@ -236,8 +307,8 @@ public class Obs_Det_GUI : MonoBehaviour
     // Draw GUI for obstacle states
     void OnGUI()
     {
-        float radius = 50f;
-        float hexRadius = 70f;
+        float radius = 30f; // Reduced size for smaller GUI
+        float hexRadius = 50f; // Proportionally smaller hex radius
 
         Vector2[] positions = new Vector2[7];
 
@@ -249,53 +320,63 @@ public class Obs_Det_GUI : MonoBehaviour
         positions[5] = center + new Vector2(-hexRadius * Mathf.Cos(Mathf.PI / 6), -hexRadius * Mathf.Sin(Mathf.PI / 6));
         positions[6] = center;
 
-        GUIStyle buttonStyle = new GUIStyle(GUI.skin.button);
-        buttonStyle.fontSize = 9;
-        buttonStyle.alignment = TextAnchor.MiddleCenter;
-
         for (int i = 0; i < 6; i++)
         {
-            Rect rect = new Rect(positions[i].x, positions[i].y, radius, radius);
+            Rect rect = new Rect(positions[i].x - radius / 2, positions[i].y - radius / 2, radius, radius);
 
-            // Determine the color based on sector state
-            switch (sectorStates[i])
+            // Determine the color based on showState
+            Color color;
+            switch (sectorStates[i].showState)
             {
                 case 4: // Purple
-                    buttonStyle.normal.background = MakeTex(2, 2, new Color(0.5f, 0, 0.5f));
-                    GUI.Button(rect, "Near High", buttonStyle);
+                    color = new Color(0.5f, 0, 0.5f);
                     break;
                 case 3: // Orange
-                    buttonStyle.normal.background = MakeTex(2, 2, new Color(1f, 0.5f, 0));
-                    GUI.Button(rect, "Near Low", buttonStyle);
+                    color = new Color(1f, 0.5f, 0);
                     break;
                 case 2: // Red
-                    buttonStyle.normal.background = MakeTex(2, 2, Color.red);
-                    GUI.Button(rect, "Far High", buttonStyle);
+                    color = Color.red;
                     break;
                 case 1: // Yellow
-                    buttonStyle.normal.background = MakeTex(2, 2, Color.yellow);
-                    GUI.Button(rect, "Far Low", buttonStyle);
+                    color = Color.yellow;
                     break;
                 default: // Green
-                    buttonStyle.normal.background = MakeTex(2, 2, Color.green);
-                    GUI.Button(rect, "Clear", buttonStyle);
+                    color = Color.green;
                     break;
             }
+
+            // Draw the circle
+            GUI.DrawTexture(rect, MakeCircleTex((int)radius, color));
         }
     }
 
-    // Helper function to create a texture for GUI buttons
-    private Texture2D MakeTex(int width, int height, Color col)
+    // Helper function to create a circular texture for GUI elements
+    private Texture2D MakeCircleTex(int diameter, Color col)
     {
-        Color[] pix = new Color[width * height];
-        for (int i = 0; i < pix.Length; i++)
+        Texture2D tex = new Texture2D(diameter, diameter);
+        Color[] pix = new Color[diameter * diameter];
+        Vector2 center = new Vector2(diameter / 2f, diameter / 2f);
+        float radius = diameter / 2f;
+
+        for (int y = 0; y < diameter; y++)
         {
-            pix[i] = col;
+            for (int x = 0; x < diameter; x++)
+            {
+                Vector2 pos = new Vector2(x, y);
+                if (Vector2.Distance(pos, center) <= radius)
+                {
+                    pix[y * diameter + x] = col;
+                }
+                else
+                {
+                    pix[y * diameter + x] = Color.clear; // Transparent outside the circle
+                }
+            }
         }
-        Texture2D result = new Texture2D(width, height);
-        result.SetPixels(pix);
-        result.Apply();
-        return result;
+
+        tex.SetPixels(pix);
+        tex.Apply();
+        return tex;
     }
 
     // Send sectorStates via TCP
@@ -304,7 +385,7 @@ public class Obs_Det_GUI : MonoBehaviour
         if (tcpClient != null && tcpClient.Client_Socket != null && tcpClient.Client_Socket.Connected)
         {
             // Convert sectorStates to a comma-separated string
-            string message = string.Join(",", sectorStates);
+            string message = string.Join(",", sectorStates.Select(s => s.realState));
 
             // Send the message
             tcpClient.inputMes = message;

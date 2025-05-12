@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "D:\\UnityProjects\\haptic-3D-v1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|D:\\UnityProjects\\haptic-3D-v1\\assets\\scripts_x\\obs_det_gui\\obs_det_gui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts_x\\obs_det_gui\\obs_det_gui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|d:\\unityprojects\\haptic-3d-v1\\assets\\traffic lights system\\scripts\\halotrafficlight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|solutionrelative:assets\\traffic lights system\\scripts\\halotrafficlight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|d:\\unityprojects\\haptic-3d-v1\\assets\\scripts_x\\world_ctrl\\move_target.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts_x\\world_ctrl\\move_target.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|D:\\UnityProjects\\haptic-3D-v1\\assets\\scripts_x\\world_ctrl\\randommove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts_x\\world_ctrl\\randommove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|D:\\UnityProjects\\haptic-3D-v1\\assets\\scripts_x\\world_ctrl\\npc_move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts_x\\world_ctrl\\npc_move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|D:\\UnityProjects\\haptic-3D-v1\\assets\\scripts_x\\guis\\obs_det_gui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts_x\\guis\\obs_det_gui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,70 +14,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HaloTrafficLight.cs",
-              "DocumentMoniker": "D:\\UnityProjects\\haptic-3D-v1\\Assets\\Traffic Lights System\\Scripts\\HaloTrafficLight.cs",
-              "RelativeDocumentMoniker": "Assets\\Traffic Lights System\\Scripts\\HaloTrafficLight.cs",
-              "ToolTip": "D:\\UnityProjects\\haptic-3D-v1\\Assets\\Traffic Lights System\\Scripts\\HaloTrafficLight.cs",
-              "RelativeToolTip": "Assets\\Traffic Lights System\\Scripts\\HaloTrafficLight.cs",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAcwCgAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T11:52:07.028Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Obs_Det_GUI.cs",
-              "DocumentMoniker": "D:\\UnityProjects\\haptic-3D-v1\\Assets\\Scripts_X\\Obs_Det_GUI\\Obs_Det_GUI.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts_X\\Obs_Det_GUI\\Obs_Det_GUI.cs",
-              "ToolTip": "D:\\UnityProjects\\haptic-3D-v1\\Assets\\Scripts_X\\Obs_Det_GUI\\Obs_Det_GUI.cs",
-              "RelativeToolTip": "Assets\\Scripts_X\\Obs_Det_GUI\\Obs_Det_GUI.cs",
-              "ViewState": "AgIAAKMAAAAAAAAAAAAUwCoBAAAFAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\UnityProjects\\haptic-3D-v1\\Assets\\Scripts_X\\GUIs\\Obs_Det_GUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts_X\\GUIs\\Obs_Det_GUI.cs",
+              "ToolTip": "D:\\UnityProjects\\haptic-3D-v1\\Assets\\Scripts_X\\GUIs\\Obs_Det_GUI.cs",
+              "RelativeToolTip": "Assets\\Scripts_X\\GUIs\\Obs_Det_GUI.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAQwFsAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T07:38:24.532Z",
+              "WhenOpened": "2025-05-11T02:35:32.997Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Move_Target.cs",
-              "DocumentMoniker": "D:\\UnityProjects\\haptic-3D-v1\\Assets\\Scripts_X\\World_Ctrl\\Move_Target.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts_X\\World_Ctrl\\Move_Target.cs",
-              "ToolTip": "D:\\UnityProjects\\haptic-3D-v1\\Assets\\Scripts_X\\World_Ctrl\\Move_Target.cs",
-              "RelativeToolTip": "Assets\\Scripts_X\\World_Ctrl\\Move_Target.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAABIwBIAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T06:19:29.558Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RandomMove.cs",
-              "DocumentMoniker": "D:\\UnityProjects\\haptic-3D-v1\\Assets\\Scripts_X\\World_Ctrl\\RandomMove.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts_X\\World_Ctrl\\RandomMove.cs",
-              "ToolTip": "D:\\UnityProjects\\haptic-3D-v1\\Assets\\Scripts_X\\World_Ctrl\\RandomMove.cs",
-              "RelativeToolTip": "Assets\\Scripts_X\\World_Ctrl\\RandomMove.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T13:50:52.794Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "NPC_Move.cs",
-              "DocumentMoniker": "D:\\UnityProjects\\haptic-3D-v1\\Assets\\Scripts_X\\World_Ctrl\\NPC_Move.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts_X\\World_Ctrl\\NPC_Move.cs",
-              "ToolTip": "D:\\UnityProjects\\haptic-3D-v1\\Assets\\Scripts_X\\World_Ctrl\\NPC_Move.cs",
-              "RelativeToolTip": "Assets\\Scripts_X\\World_Ctrl\\NPC_Move.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAC4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-04T11:57:24.225Z"
             }
           ]
         }

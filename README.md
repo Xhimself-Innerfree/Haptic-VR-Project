@@ -73,4 +73,4 @@ In this demo, three common dynamic situtions are presented (man, car, traffic li
 you can check there is a man walking randomly on the lawn, a man and a car moving on their set paths.
 Walk around them to see the changes of your panels.
 
-A traffic light is added as well, once the traffic light turns red. your panel turns purplr. Only standing infront of this traffic light can see this change (-45 degrees to 45 degrees)
+A traffic light is added as well, once the traffic light turns red. your panel turns purple. Only standing infront of this traffic light can see this change (-45 degrees to 45 degrees)
