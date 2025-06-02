@@ -28677,10 +28677,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 860870353}
-  - component: {fileID: 860870352}
   - component: {fileID: 860870354}
-  - component: {fileID: 860870355}
   - component: {fileID: 860870356}
+  - component: {fileID: 860870357}
+  - component: {fileID: 860870358}
   m_Layer: 3
   m_Name: Obs_Det_GUI
   m_TagString: Untagged
@@ -28688,32 +28688,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &860870352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 860870351}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b47f26008639d3b4c8d79a5db83836fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 283524687}
-  farDetectionRadius: 5
-  nearDetectionRadius: 1
-  obstacleLayer:
-    serializedVersion: 2
-    m_Bits: 2147483776
-  raysPerSector: 8
-  trafficLight: {fileID: 2097664666}
-  playerBottomOffset: 0.85
-  verticalStep: 1
-  StepThreshold: 1
-  enableGizmos: 1
-  center: {x: 900, y: 70}
-  tcpClient: {fileID: 322194337}
 --- !u!4 &860870353
 Transform:
   m_ObjectHideFlags: 0
@@ -28751,32 +28725,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!114 &860870355
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 860870351}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d2756f419ef9044991eed7b5d8fc0b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 283524687}
-  farDetectionRadius: 5
-  nearDetectionRadius: 1
-  obstacleLayer:
-    serializedVersion: 2
-    m_Bits: 2147483776
-  raysPerSector: 8
-  trafficLight: {fileID: 2097664666}
-  playerBottomOffset: 0.85
-  verticalStep: 1
-  StepThreshold: 1
-  enableGizmos: 1
-  center: {x: 900, y: 70}
-  tcpClient: {fileID: 322194337}
 --- !u!114 &860870356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28784,7 +28732,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 860870351}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c42948c3d7715b4eb4f20a00b4a3905, type: 3}
   m_Name: 
@@ -28804,9 +28752,70 @@ MonoBehaviour:
   playerBottomOffset: 0.85
   verticalStep: 1
   StepThreshold: 1
-  enableGizmos: 1
+  enableGizmos: 0
   center: {x: 900, y: 70}
   tcpClient: {fileID: 322194337}
+--- !u!114 &860870357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860870351}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 912e33e52ade1374fb13406ca8109ffb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sectorCount: 12
+  player: {fileID: 283524687}
+  farDetectionRadius: 5
+  nearDetectionRadius: 1
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 2147484032
+  raysPerSector: 8
+  CarRadius: 40
+  carLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  trafficLight: {fileID: 2097664666}
+  playerBottomOffset: 0.85
+  verticalStep: 1
+  StepThreshold: 1
+  enableGizmos: 0
+  center: {x: 900, y: 70}
+  tcpClient: {fileID: 322194337}
+--- !u!114 &860870358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860870351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d31312d94c5e9042a2dd6c59298e799, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 283524687}
+  farDetectionRadius: 5
+  nearDetectionRadius: 1
+  obstacleLayer:
+    serializedVersion: 2
+    m_Bits: 2147484032
+  raysPerSector: 5
+  CarRadius: 3
+  carLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  trafficLight: {fileID: 0}
+  playerBottomOffset: 0.85
+  verticalStep: 1
+  StepThreshold: 1
+  enableGizmos: 1
+  center: {x: 900, y: 70}
+  tcpClient: {fileID: 0}
 --- !u!1001 &861135326
 PrefabInstance:
   m_ObjectHideFlags: 0
