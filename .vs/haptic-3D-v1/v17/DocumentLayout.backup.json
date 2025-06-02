@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\UnityProjects\\haptic-3D-v1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|D:\\UnityProjects\\haptic-3D-v1\\assets\\scripts_x\\guis\\obs_det_gui_v3_1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts_x\\guis\\obs_det_gui_v3_1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|d:\\unityprojects\\haptic-3d-v1\\assets\\scripts_x\\guis\\active_mtd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts_x\\guis\\active_mtd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|d:\\unityprojects\\haptic-3d-v1\\assets\\scripts_x\\guis\\obs_det_gui_highreso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts_x\\guis\\obs_det_gui_highreso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|d:\\unityprojects\\haptic-3d-v1\\assets\\scripts_x\\guis\\obs_det_gui_v3_1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{325B82C1-654B-83D7-3427-C33E8033357F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts_x\\guis\\obs_det_gui_v3_1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Obs_Det_GUI_HighReso.cs",
-              "DocumentMoniker": "D:\\UnityProjects\\haptic-3D-v1\\Assets\\Scripts_X\\GUIs\\Obs_Det_GUI_HighReso.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts_X\\GUIs\\Obs_Det_GUI_HighReso.cs",
-              "ToolTip": "D:\\UnityProjects\\haptic-3D-v1\\Assets\\Scripts_X\\GUIs\\Obs_Det_GUI_HighReso.cs",
-              "RelativeToolTip": "Assets\\Scripts_X\\GUIs\\Obs_Det_GUI_HighReso.cs",
-              "ViewState": "AgIAAN8AAAAAAAAAAAAUwEwBAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T10:57:02.366Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Obs_Det_GUI_v3_1.cs",
               "DocumentMoniker": "D:\\UnityProjects\\haptic-3D-v1\\Assets\\Scripts_X\\GUIs\\Obs_Det_GUI_v3_1.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts_X\\GUIs\\Obs_Det_GUI_v3_1.cs",
               "ToolTip": "D:\\UnityProjects\\haptic-3D-v1\\Assets\\Scripts_X\\GUIs\\Obs_Det_GUI_v3_1.cs",
               "RelativeToolTip": "Assets\\Scripts_X\\GUIs\\Obs_Det_GUI_v3_1.cs",
-              "ViewState": "AgIAAKAAAAAAAAAAAAAUwPIAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAIcBAAAAAAAAAAAiwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-12T11:48:25.185Z",
+              "WhenOpened": "2025-06-02T12:57:58.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Active_Mtd.cs",
+              "DocumentMoniker": "D:\\UnityProjects\\haptic-3D-v1\\Assets\\Scripts_X\\GUIs\\Active_Mtd.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts_X\\GUIs\\Active_Mtd.cs",
+              "ToolTip": "D:\\UnityProjects\\haptic-3D-v1\\Assets\\Scripts_X\\GUIs\\Active_Mtd.cs",
+              "RelativeToolTip": "Assets\\Scripts_X\\GUIs\\Active_Mtd.cs",
+              "ViewState": "AgIAALgAAAAAAAAAAAAuwNoAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T11:52:31.413Z",
               "EditorCaption": ""
             }
           ]
